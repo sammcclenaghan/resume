@@ -48,37 +48,33 @@
 #resume_heading("Projects")
 #project_item(
   name: "Vikes Scraper",
-  skills: "Go"
+  skills: "Go",
   date: "Aug 2025",
-  [Developed a full-stack web application using with Flask serving a REST API with React as the frontend],
-  [Implemented GitHub OAuth to get data from user’s repositories],
-  [Visualized GitHub data to show collaboration],
-  [Used Celery and Redis for asynchronous tasks]
+  [Built a concurrent web scraper achieving 90\% faster data retrieval by implementing goroutines and channels for parallel processing of 5000+ course entries],
+  [Implemented robust error handling and recovery mechanisms for system stability, including graceful timeout management and request retries],
+  [Engineered efficient memory management through string manipulation and buffer pooling, optimizing resource usage in a constrained environment],
+  [Designed a modular architecture with interfaces and dependency injection, enabling easy integration of new data sources and 40\% faster feature development]
 )
 #project_item(
-  name: "Simple Paintball",
-  skills: "Spigot API, Java, Maven, TravisCI, Git",
-  date: "May 2018 - May 2020",
-  [Developed a Minecraft server plugin to entertain kids during free time for a previous job],
-  [Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review],
-  [Implemented continuous delivery using TravisCI to build the plugin upon new a release],
-  [Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin]
+  name: "Photograph",
+  skills: "Next.js, React.js, Typescript PostgreSQL",
+  date: "Jan 2025",
+  [Architected and developed a scalable, full-stack photo gallery platform using Next.js App Router, React Server Components, and TypeScript, optimizing performance and SEO],
+  [Implemented role-based collaboration system enabling gallery owners to share with viewers, editors, and admins, with features for real-time invitations and permission management],
+  [Engineered a robust backend with PostgreSQL and Drizzle ORM, implementing efficient queries and migrations for seamless data management and scalability],
+  [Implemented efficient image management with Next.js Image optimization and UploadThing for secure file uploads]
 )
 
 #resume_heading("Technical Skills")
 #skill_item(
   category: "Languages",
-  skills: "Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R"
+  skills: "React.js, Vue.js, Python, Go, Java, SQL, Ruby"
 )
 #skill_item(
-  category: "Frameworks",
-  skills: "React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI"
+  category: "Frameworks &amp Libraries",
+  skills: "Ruby on Rails, Next.js, Remix, TailwindCSS, BootStrap"
 )
 #skill_item(
   category: "Developer Tools",
-  skills: "Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse"
-)
-#skill_item(
-  category: "Libraries",
-  skills: "pandas, NumPy, Matplotlib"
+  skills: "Git, Docker, Jira, AWS (Lambda, S3, DynamoDB)"
 )
