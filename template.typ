@@ -3,12 +3,12 @@
   show list: set text(size: 0.92em)
   show link: underline
   show link: set underline(offset: 3pt)
-  
+
   set page(
     paper: "us-letter",
     margin: (x: 0.5in, y: 0.5in)
   )
-  
+
   set text(
     size: 11pt,
       font: "New Computer Modern",
@@ -52,9 +52,9 @@
 }
 
 #let edu_item(
-  name: "Sample University", 
-  degree: "B.S in Bullshit", 
-  location: "Foo, BA", 
+  name: "Sample University",
+  degree: "B.S in Bullshit",
+  location: "Foo, BA",
   date: "Aug. 1600 - May 1750"
 ) = {
   set block(above: 0.7em, below: 1em)
@@ -116,4 +116,3 @@
   set text(size: 0.91em)
   pad(left: 1em, right: 0.5em, block[*#category*: #skills])
 }
-
