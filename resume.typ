@@ -26,43 +26,41 @@
 
 #resume_heading[Experience]
 #exp_item(
-  role: "Full Stack Developer, Intern",
-  name: "Leanpub",
-  location: "Victoria, BC",
-  date: "May 2025 - Dec. 2025",
-  [Built and shipped book-publishing features on Ruby on Rails 8 to improve reliability and author workflows],
-  [Enhanced the Lexical plain-text Markua editor with robust resource handling and syntax highlighting],
-  [Modernized backend services for the authors application, improving maintainability and test coverage]
+role: "Full Stack Developer, Intern",
+name: "Leanpub",
+location: "Victoria, BC",
+date: "May 2025 - Dec. 2025",
+[Built and maintained scalable book-publishing features in Ruby on Rails 8 with RESTful APIs and Active Storage, increasing pipeline reliability and team efficiency.],
+[Optimized Markua editor for large-scale manuscripts with enhanced media support and faster text rendering.],
+[Rebuilt Dropbox API integration to streamline file sync and publishing flows for authors using AWS S3 and background job queues.]
 )
 #exp_item(
   role: "Software Developer, Intern",
   name: "Trustscience",
   location: "Edmonton, AB",
   date: "Nov. 2022 - Aug. 2024 (Summers)",
-  [Improved a file version-control system using JSON Patch, reducing operational costs by 15% and simplifying delta storage],
-  [Led UI/UX modernization with Vue.js 3 Composition API and a serverless backend, shortening client integration time by 45%],
-  [Designed and implemented a microservices migration leveraging DynamoDB and Elasticsearch for real-time financial analytics, achieving 3x faster data retrieval]
+  [Developed and deployed a production-grade file version-control system using HTTP2 and JSON Patch to enable delta storage, reducing AWS S3 costs by 15%.],
+  [Modernized front-end architecture with Vue 3 Composition API and serverless AWS Lambda services, accelerating partner onboarding by 45%.],
+  [Engineered and delivered a microservice-based real-time financial analytics platform using DynamoDB and Elasticsearch, achieving 3× faster query performance.]
 )
 
 
 #resume_heading("Projects")
 #project_item(
-  name: "Vikes Scraper",
-  skills: "Go",
-  date: "Aug 2025",
-  [Built a concurrent web scraper achieving 90\% faster data retrieval by implementing goroutines and channels for parallel processing of 5000+ course entries],
-  [Implemented robust error handling and recovery mechanisms for system stability, including graceful timeout management and request retries],
-  [Engineered efficient memory management through string manipulation and buffer pooling, optimizing resource usage in a constrained environment],
-  [Designed a modular architecture with interfaces and dependency injection, enabling easy integration of new data sources and 40\% faster feature development]
+name: "Course Scheduler",
+skills: "Go, React, Typescript",
+date: "Sept 2025",
+[Built a full-stack platform for scheduling 5000+ UVic courses using Go REST API and React frontend.],
+[Implemented type-safe backend with Go, SQLite, and sqlc; added middleware for logging, CORS, and rate limiting.],
+[Developed interactive React frontend with TanStack Router, React Query, and Tailwind CSS; integrated oRPC for type-safe API communication.]
 )
 #project_item(
-  name: "Photograph",
-  skills: "Next.js, React.js, Typescript PostgreSQL",
-  date: "Jan 2025",
-  [Architected and developed a scalable, full-stack photo gallery platform using Next.js App Router, React Server Components, and TypeScript, optimizing performance and SEO],
-  [Implemented role-based collaboration system enabling gallery owners to share with viewers, editors, and admins, with features for real-time invitations and permission management],
-  [Engineered a robust backend with PostgreSQL and Drizzle ORM, implementing efficient queries and migrations for seamless data management and scalability],
-  [Implemented efficient image management with Next.js Image optimization and UploadThing for secure file uploads]
+name: "Text Adventure",
+skills: "Java, Design Patterns, OOP",
+date: "Oct 2023",
+[Architected event-driven game engine in Java with Factory and Command patterns, enabling modular command system with 8 player actions across 9 interconnected rooms.],
+[Implemented custom event system using functional interfaces to decouple command execution from state management, reducing coupling and enabling extensible features.],
+[Designed polymorphic domain model with abstract base classes for combat, inventory management, and graph-based navigation using HashMap data structures.]
 )
 
 #resume_heading("Technical Skills")
