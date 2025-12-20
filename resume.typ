@@ -31,8 +31,8 @@ name: "Leanpub",
 location: "Victoria, BC",
 date: "May 2025 - Dec. 2025",
 [Built and maintained scalable book-publishing features in Ruby on Rails 8 with RESTful APIs and Active Storage, increasing pipeline reliability and team efficiency.],
-[Optimized Markua editor for large-scale manuscripts with enhanced media support and faster text rendering.],
-[Rebuilt Dropbox API integration to streamline file sync and publishing flows for authors using AWS S3 and background job queues.]
+[Rebuilt Dropbox API integration to streamline file sync and publishing flows for authors using AWS S3 and background job queues.],
+[Implemented end-to-end background job progress tracking (ActiveJob::Status + Redis pub/sub + SSE) and a Remix/React progress bar with reliable completion/failure handling for author-facing publishing workflows.]
 )
 #exp_item(
   role: "Software Developer, Intern",
@@ -41,18 +41,18 @@ date: "May 2025 - Dec. 2025",
   date: "Nov. 2022 - Aug. 2024 (Summers)",
   [Developed and deployed a production-grade file version-control system using HTTP2 and JSON Patch to enable delta storage, reducing AWS S3 costs by 15%.],
   [Modernized front-end architecture with Vue 3 Composition API and serverless AWS Lambda services, accelerating partner onboarding by 45%.],
-  [Engineered and delivered a microservice-based real-time financial analytics platform using DynamoDB and Elasticsearch, achieving 3× faster query performance.]
+  [Engineered and delivered a microservice-based real-time financial analytics platform using DynamoDB and Elasticsearch, achieving faster query performance.]
 )
 
 
 #resume_heading("Projects")
 #project_item(
 name: "Course Scheduler",
-skills: "Go, React, Typescript",
-date: "Sept 2025",
-[Built a full-stack platform for scheduling 5000+ UVic courses using Go REST API and React frontend.],
-[Implemented type-safe backend with Go, SQLite, and sqlc; added middleware for logging, CORS, and rate limiting.],
-[Developed interactive React frontend with TanStack Router, React Query, and Tailwind CSS; integrated oRPC for type-safe API communication.]
+skills: "Go, React, TypeScript, SQLite",
+date: "2025",
+[Built a full-stack course scheduling platform with Go/Chi REST API and React 19 frontend, featuring interactive weekly calendar with drag-and-drop, real-time enrollment data, and shareable schedules.],
+[Developed concurrent web scraper using goroutines to fetch course data from UVic's catalog and Banner systems, parsing HTML with custom tree-walking algorithms to extract section details and enrollment stats.],
+[Deployed containerized application on Fly.io with Caddy reverse proxy; implemented type-safe database layer using sqlc with SQLite for course storage and schedule persistence.]
 )
 #project_item(
 name: "Text Adventure",
