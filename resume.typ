@@ -61,18 +61,18 @@ date: "2025",
 [Deployed containerized application on Fly.io with Caddy reverse proxy; implemented type-safe database layer using sqlc with SQLite for course storage and schedule persistence.]
 )
 #project_item(
-name: "Text Adventure",
-skills: "Java, Design Patterns, OOP",
-date: "Oct 2023",
-[Architected event-driven game engine in Java with Factory and Command patterns, enabling modular command system with 8 player actions across 9 interconnected rooms.],
-[Implemented custom event system using functional interfaces to decouple command execution from state management, reducing coupling and enabling extensible features.],
-[Designed polymorphic domain model with abstract base classes for combat, inventory management, and graph-based navigation using HashMap data structures.]
+  name: "Job Tracker",
+  skills: "Ruby on Rails, OpenRouter API (GPT), Faraday, JSON",
+  date: "2026",
+  [Built a Rails job tracker featuring LLM-powered automation: GPT-driven job posting parser extracting structured fields (company, title, skills, salary) from unstructured text.],
+  [Implemented AI cover letter generator using structured prompts and resume-aware context to produce personalized, metric-driven cover letters.],
+  [Integrated OpenRouter API with temperature-tuned responses (0.3 parsing, 0.7 creative) and robust error handling for reliable production use.]
 )
 
 #resume_heading("Technical Skills")
 #skill_item(
   category: "Languages",
-  skills: "React.js, Vue.js, Python, Go, C, Java, SQL, Ruby"
+  skills: "React.js, Vue.js, Python, Go, C, Java, SQL, Ruby, HTML/CSS, Typescript"
 )
 #skill_item(
   category: "Frameworks &amp Libraries",
@@ -80,5 +80,5 @@ date: "Oct 2023",
 )
 #skill_item(
   category: "Developer Tools",
-  skills: "Git, Docker, Jira, AWS (Lambda, S3, DynamoDB)"
+  skills: "Git, Docker, Jira, AWS (Lambda, S3, DynamoDB), CI/CD"
 )
