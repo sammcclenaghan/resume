@@ -28,10 +28,11 @@
 #exp_item(
 role: "Full Stack Developer, Intern",
 name: "Leanpub",
-location: "Victoria, BC",
+location: "Remote (Victoria, BC)",
 date: "May 2025 - Dec. 2025",
 [Rebuilt Dropbox API integration to streamline file sync and publishing flows for authors using AWS S3 and background job queues.],
-[Implemented end-to-end background job progress tracking using Redis and a progress bar with reliable completion/failure handling for author-facing publishing workflows.]
+[Implemented end-to-end background job progress tracking using Redis and a progress bar with reliable completion/failure handling.],
+[Contributed to a large-scale Rails monolith, writing robust tests with RSpec and FactoryBot to ensure stability for critical production features.]
 )
 #exp_item(
   role: "Application & APIs Developer, Intern",
@@ -54,29 +55,27 @@ date: "May 2025 - Dec. 2025",
 #resume_heading("Projects")
 #project_item(
 name: "Course Scheduler",
-skills: "Go, React, TypeScript, SQLite",
+skills: "React, TypeScript, Go, SQLite",
 date: "2025",
-[Built a full-stack course scheduling platform with Go/Chi REST API and React 19 frontend, featuring interactive weekly calendar with drag-and-drop, real-time enrollment data, and shareable schedules.],
-[Developed concurrent web scraper using goroutines to fetch course data from UVic's catalog and Banner systems, parsing HTML with custom tree-walking algorithms to extract section details and enrollment stats.],
-[Deployed containerized application on Fly.io with Caddy reverse proxy; implemented type-safe database layer using sqlc with SQLite for course storage and schedule persistence.]
+[Built full-stack scheduling platform with Go/Chi REST API and React 19, featuring drag-and-drop calendar, real-time enrollment data, and shareable schedules.],
+[Developed concurrent scraper using goroutines to process 1000+ courses from UVic systems, implementing custom HTML parsing for live enrollment stats.]
 )
 #project_item(
   name: "Job Tracker",
   skills: "Ruby on Rails, OpenRouter API (GPT), Faraday, JSON",
   date: "2026",
-  [Built a Rails job tracker featuring LLM-powered automation: GPT-driven job posting parser extracting structured fields (company, title, skills, salary) from unstructured text.],
-  [Implemented AI cover letter generator using structured prompts and resume-aware context to produce personalized, metric-driven cover letters.],
-  [Integrated OpenRouter API with temperature-tuned responses (0.3 parsing, 0.7 creative) and robust error handling for reliable production use.]
+  [Built Rails job tracker with GPT-powered automation parsing job postings into structured data (company, title, skills, salary).],
+  [Implemented AI cover letter generator using resume-aware prompts for personalized output, integrated via OpenRouter API with robust error handling.]
 )
 
 #resume_heading("Technical Skills")
 #skill_item(
   category: "Languages",
-  skills: "React.js, Vue.js, Python, Go, C, Java, SQL, Ruby, HTML/CSS, Typescript"
+  skills: "React.js, Typescript, Vue.js, Python, Go, C, Java, SQL, Ruby, HTML/CSS"
 )
 #skill_item(
-  category: "Frameworks &amp Libraries",
-  skills: "Ruby on Rails, Next.js, Remix, TailwindCSS, BootStrap"
+  category: "Frameworks & Libraries",
+  skills: "Ruby on Rails, Rspec, Minitest, Next.js, Remix, TailwindCSS, BootStrap"
 )
 #skill_item(
   category: "Developer Tools",
