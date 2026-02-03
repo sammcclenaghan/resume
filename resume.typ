@@ -69,13 +69,18 @@ date: "2025",
 )
 
 #resume_heading("Technical Skills")
+
 #skill_item(
   category: "Languages",
-  skills: "React.js, Typescript, Vue.js, Python, Go, C, Java, SQL, Ruby, HTML/CSS"
+  skills: "Java, Python, C, Javascript/Typescript, SQL(MySQL), Ruby, HTML/CSS, Go"
+)
+#skill_item(
+  category: "Relevant Coursework",
+  skills: "OS, Computer Organization, Data structures, Signals & Networks"
 )
 #skill_item(
   category: "Frameworks & Libraries",
-  skills: "Ruby on Rails, Rspec, Minitest, Next.js, Remix, TailwindCSS, BootStrap"
+  skills: "Ruby on Rails, jQuery, Rspec, Minitest, Next.js, Remix, TailwindCSS, BootStrap"
 )
 #skill_item(
   category: "Developer Tools",
