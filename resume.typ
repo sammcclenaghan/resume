@@ -17,14 +17,15 @@
   location: "Victoria, BC",
   date: "Sept 2023 - April 2027"
 )
-#edu_item(
-  name: "Bellerose Composite High School",
-  degree: "International Baccalaureate Diploma Programme",
-  location: "Edmonton, AB",
-  date: "Aug. 2020 -- June 2023"
-)
 
 #resume_heading[Experience]
+#exp_item(
+role: "Software Engineer",
+name: "Vertical City",
+location: "Victoria, BC",
+date: "May 2026 - Present",
+[Building backend systems that deliver content to digital signage in elevators and lobbies, focusing on request handling, bandwidth optimization, and keeping fleets of screens in sync.]
+)
 #exp_item(
 role: "Full Stack Developer, Intern",
 name: "Leanpub",
@@ -47,18 +48,17 @@ date: "May 2025 - Dec. 2025",
   name: "Trustscience",
   location: "Edmonton, AB",
   date: "Nov. 2022 - Aug. 2023",
-  [Modernized front-end architecture with Vue 3 Composition API and serverless AWS Lambda services, accelerating partner onboarding by 45%.],
-  [Spearheaded a global error handling system, unifying error state management and user notifications across the codebase.]
+  [Modernized front-end architecture with Vue 3 Composition API and serverless AWS Lambda services, accelerating partner onboarding by 45%.]
 )
 
 
 #resume_heading("Projects")
 #project_item(
-name: "Course Scheduler",
-skills: "React, TypeScript, Go, SQLite",
-date: "2025",
-[Built full-stack scheduling platform with Go/Chi REST API and React 19, featuring drag-and-drop calendar, real-time enrollment data, and shareable schedules.],
-[Developed concurrent scraper using goroutines to process 1000+ courses from UVic systems, implementing custom HTML parsing for live enrollment stats.]
+name: "CourseFlow",
+skills: "React, TypeScript, Cloudflare Workers, D1, Durable Objects",
+date: "2025 - 2026",
+[Shipped a UVic course scheduler, live at courseflow.smccl.ca: catalog search with live enrollment counts, interactive timetable building, and real-time schedule sharing over Durable Objects.],
+[Rebuilt the platform from its Go, MySQL, and Docker deployment on a VPS onto Cloudflare Workers and D1, porting the catalog importer to TypeScript to ingest 1000+ courses per term from UVic's Kuali and Banner systems.]
 )
 #project_item(
   name: "Job Tracker",
