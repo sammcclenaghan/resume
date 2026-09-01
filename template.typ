@@ -27,15 +27,17 @@
   phone: "123-456-7890",
   email: "jake@su.edu",
   linkedin: "linkedin.com/in/jake",
-  site: "github.com/jake",
+  github: "github.com/jake",
+  site: none,
 ) = {
   align(center,
     block[
       #name_header(name) \
       #phone |
       #link("mailto:" + email)[#email] |
-      #link("https://" + linkedin)[Linkedin] |
-      #link("https://" + site)[Github]
+      #link("https://" + linkedin)[LinkedIn] |
+      #link("https://" + github)[GitHub]
+      #if site != none [| #link("https://" + site)[#site]]
     ]
   )
   v(5pt)
@@ -55,7 +57,8 @@
   name: "Sample University",
   degree: "B.S in Bullshit",
   location: "Foo, BA",
-  date: "Aug. 1600 - May 1750"
+  date: "Aug. 1600 - May 1750",
+  courses: none,
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, grid(
@@ -63,6 +66,7 @@
     align(left)[
       *#name* \
       _#degree _
+      #if courses != none [\ #text(size: 0.91em)[Coursework: #courses]]
     ],
     align(right)[
       #location \
