@@ -1,24 +1,25 @@
 #let resume(body) = {
-  set list(indent: 1em)
+  set list(indent: 1em, spacing: 0.72em)
+  set par(spacing: 0.9em)
   show list: set text(size: 0.92em)
   show link: underline
   show link: set underline(offset: 3pt)
 
   set page(
     paper: "us-letter",
-    margin: (x: 0.5in, y: 0.5in)
+    margin: (x: 0.5in, y: 0.5in),
   )
 
   set text(
     size: 11pt,
-      font: "New Computer Modern",
+    font: "New Computer Modern",
   )
 
   body
 }
 
 #let name_header(name) = {
-  set text(size: 2.25em)
+  set text(size: 1.8em)
   [*#name*]
 }
 
@@ -26,27 +27,26 @@
   name: "Jake Ryan",
   phone: "123-456-7890",
   email: "jake@su.edu",
-  linkedin: "linkedin.com/in/jake",
-  github: "github.com/jake",
+  linkedin: none,
+  github: none,
   site: none,
 ) = {
-  align(center,
-    block[
-      #name_header(name) \
-      #phone |
-      #link("mailto:" + email)[#email] |
-      #link("https://" + linkedin)[LinkedIn] |
-      #link("https://" + github)[GitHub]
-      #if site != none [| #link("https://" + site)[#site]]
-    ]
-  )
+  align(center, block[
+    #name_header(name) \
+    #phone |
+    #link("mailto:" + email)[#email]
+    #if linkedin != none [#link("https://" + linkedin)[LinkedIn] |]
+    #if github != none [link("https://" + github)[GitHub]]
+    #if site != none [| #link("https://" + site)[#site]]
+  ])
   v(5pt)
 }
 
 #let resume_heading(txt) = {
-  show heading: set text(size: 0.92em, weight: "regular")
+  show heading: set text(size: 0.8em, weight: "regular")
+  show heading: set block(above: 0em, below: 0.8em)
 
-  block[
+  block(above: 1.6em, below: 0.5em)[
     = #smallcaps(txt)
     #v(-4pt)
     #line(length: 100%, stroke: 1pt + black)
@@ -58,20 +58,23 @@
   degree: "B.S in Bullshit",
   location: "Foo, BA",
   date: "Aug. 1600 - May 1750",
-  courses: none,
+  details: none,
 ) = {
-  set block(above: 0.7em, below: 1em)
-  pad(left: 1em, right: 0.5em, grid(
-    columns: (3fr, 1fr),
-    align(left)[
-      *#name* \
-      _#degree _
-      #if courses != none [\ #text(size: 0.91em)[Coursework: #courses]]
-    ],
-    align(right)[
-      #location \
-      _#date _
-    ]
+  set block(above: 0.4em, below: 1.2em)
+  pad(left: 1em, right: 0.5em, stack(
+    spacing: 0.55em,
+    grid(
+      columns: (3fr, 1fr),
+      align(left)[
+        *#name* \
+        _#degree _
+      ],
+      align(right)[
+        #location \
+        _#date _
+      ],
+    ),
+    if details != none [#text(size: 0.92em)[#details]],
   ))
 }
 
@@ -80,7 +83,7 @@
   role: "Worker",
   date: "June 1837 - May 1845",
   location: "Foo, BA",
-  ..points
+  ..points,
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, box[
@@ -93,8 +96,9 @@
       align(right)[
         #date \
         _#location _
-      ]
+      ],
     )
+    #v(0.3em)
     #list(..points)
   ])
 }
@@ -103,11 +107,15 @@
   name: "Example Project",
   skills: "Programming Language 1, Database3",
   date: "May 1234 - June 4321",
-  ..points
+  url: none,
+  ..points,
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, box[
-    *#name* | _#skills _ #h(1fr) #date
+    *#name* | _#skills _
+    #if url != none [| #link("https://" + url)[#url]]
+    #h(1fr) #date
+    #v(0.3em)
     #list(..points)
   ])
 }
