@@ -9,43 +9,44 @@
   site: "smccl.ca",
 )
 
+#resume_heading[Education]
+#edu_item(
+  name: "University of Victoria",
+  degree: "Honours Bachelor of Science in Computer Science",
+  location: "Victoria, BC",
+  date: "Sep 2023 – Dec 2027",
+  details: [Minor in Mathematics | GPA 7.8/9],
+)
+
 #resume_heading[Experience]
 #exp_item(
   role: "Software Engineer, Intern",
   name: "Vertical City",
   location: "Victoria, BC",
   date: "May 2026 – Present",
-  [Built an AWS media pipeline on S3 and CloudFront serving 2M+ requests/day across 10,000+ screens, replacing a paid vendor and saving \$20K/year],
-  [Cut media processing latency from 5 minutes to seconds with event-driven, in-process rendering],
-  [Cut bandwidth 20% with ffmpeg perceptual hashing, catching re-encoded duplicates checksums miss],
-  [Built rule-based targeting that matches content feeds to displays by city, region, and language],
+  [Eliminated \$20K in annual vendor costs by building an AWS media pipeline with S3 and CloudFront, serving 2M+ requests/day across 10,000+ screens],
+  [Reduced media processing latency from 5 minutes to seconds by implementing event-driven, in-process
+rendering for near-real-time display updates],
+  [Reduced bandwidth usage by 30% by developing a perceptual hashing system that identifies duplicate media across different encodings],
 )
 #exp_item(
   role: "Full-Stack Developer, Intern",
   name: "Leanpub",
   location: "Remote (Victoria, BC)",
   date: "May 2025 – Dec 2025",
-  [Migrated 100+ pages from a Rails 4 monolith to Rails 8, GraphQL, and React Router 7, shipping both the backend and the front end for each],
-  [Led a payment processing refactor unifying handling across product types, fixing scattered edge cases and enabling reliable refunds and purchase emails],
-  [Built real-time job progress tracking on Redis and background workers with a React progress bar],
+  [Improved accessibility coverage for 50,000+ ebooks by building an AI-powered image alt-text pipeline using AWS
+Lambda and Step Functions],
+  [Shipped a production rich text editor for 50,000+ authors by integrating Lexical with React and TypeScript
+    into core content workflows],
 )
 #exp_item(
   role: "Software Developer, Intern",
   name: "Trust Science",
   location: "Edmonton, AB",
   date: "Nov 2022 – Aug 2024",
-  [Designed a version-control system for client scoring configs, storing changes as JSON Patch deltas],
-  [Built an Elasticsearch logging pipeline on DynamoDB streams to index logs from ML scoring jobs],
-  [Migrated a 40+ page front end from Vue 2 and Bootstrap to Vue 3 and Tailwind CSS],
-)
-
-#resume_heading[Education]
-#edu_item(
-  name: "University of Victoria",
-  degree: "Honours Bachelor of Science",
-  location: "Victoria, BC",
-  date: "Sep 2023 – Present",
-  details: [Computer Science major. Mathematics minor. GPA 7.8/9. Director of Projects at VikeLabs.],
+  [Reduced AWS S3 storage costs by 15% by implementing a file version-control system with HTTP/2
+    and JSON Patch for efficient delta storage],
+  [Increased test coverage from 35% to 80% with Playwright E2E tests and Jest unit tests],
 )
 
 #resume_heading("Projects")
@@ -54,34 +55,34 @@
   skills: "TypeScript, React, Cloudflare Workers, D1",
   url: "courseflow.smccl.ca",
   date: "2025 – 2026",
-  [Built a course planner used by 2,000+ UVic students, generating 3,000+ shareable timetables],
-  [Kept shared timetables in sync live, pushing updates over WebSockets backed by Durable Objects],
-  [Built course recommendations combining BM25 lexical search with vector embeddings],
+  [Built and launched a course planner used by 2,000+ UVic students to create 3,000+ shareable timetables],
+  [Developed a course recommendation engine combining embedding-based cosine similarity, BM25 lexical search, and course-level ranking, precomputing results in D1 to avoid request-time inference],
+  [Implemented real-time schedule sharing using WebSockets and Cloudflare Durable Objects, broadcasting schedule changes and access revocations to connected viewers],
 )
 #project_item(
   name: "Anchor",
-  skills: "Next.js, TypeScript, Supabase, Anthropic SDK, Resend",
+  skills: "Expo, React Native, TypeScript, Supabase, Anthropic SDK, Resend",
   date: "2025",
-  [Built a mental-health companion at UVicHacks × Claude that detects distress from HRV data],
-  [Integrated the Anthropic SDK to deliver Claude-powered grounding during distress episodes],
-  [Owned backend and DevOps: Supabase/Postgres migrations, Vercel deployment, and Garmin ingestion],
+  [Built a mental-health companion at the UVic Claude Hackathon, integrating Garmin HRV data and the Anthropic SDK to offer
+Claude-powered grounding exercises],
+  [Deployed the React Native app to TestFlight and integrated Supabase backend services],
 )
 
 #resume_heading("Technical Skills")
 
 #skill_item(
   category: "Languages",
-  skills: "Ruby, Go, TypeScript, JavaScript, Python, Java, C, SQL",
+  skills: "TypeScript, Python, JavaScript, Ruby, Go, Java, C, SQL",
 )
 #skill_item(
-  category: "Frameworks",
-  skills: "Ruby on Rails, RSpec, React, Next.js, Remix, Vue, Tailwind CSS",
+  category: "Development and Testing",
+  skills: "React, Next.js, React Native, Ruby on Rails, Docker, Jest, Playwright",
 )
 #skill_item(
-  category: "Cloud & Tools",
-  skills: "AWS (S3, Lambda, MediaConvert, CloudFront, DynamoDB), Docker, ffmpeg",
+  category: "Cloud",
+  skills: "AWS (S3, Lambda, MediaConvert, CloudFront, DynamoDB, EC2, Step Functions), BigQuery, Cloudflare Workers",
 )
 #skill_item(
   category: "Databases",
-  skills: "MySQL, PostgreSQL, Redis, Elasticsearch",
+  skills: "MySQL, PostgreSQL, Redis, Elasticsearch, Supabase",
 )
